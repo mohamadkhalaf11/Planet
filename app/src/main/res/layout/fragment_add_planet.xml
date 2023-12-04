@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlanetData.AddPlanetFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etNameAddPlanetFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="151dp"
+            android:layout_marginBottom="9dp"
+            android:ems="10"
+            android:hint="Name..."
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/etSizeAddPlanetFragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etSizeAddPlanetFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Size..."
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/etOrbitAddPlanetFragment"
+            app:layout_constraintStart_toStartOf="@+id/etNameAddPlanetFragment"
+            app:layout_constraintTop_toBottomOf="@+id/etNameAddPlanetFragment" />
+
+        <EditText
+            android:id="@+id/etOrbitAddPlanetFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:ems="10"
+            android:hint="Orbit..."
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/etPopulationAddPlanetFragment"
+            app:layout_constraintStart_toStartOf="@+id/etSizeAddPlanetFragment"
+            app:layout_constraintTop_toBottomOf="@+id/etSizeAddPlanetFragment" />
+
+        <EditText
+            android:id="@+id/etPopulationAddPlanetFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="38dp"
+            android:ems="10"
+            android:hint="Population..."
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnAddPlanetAddPlanetFragment"
+            app:layout_constraintStart_toStartOf="@+id/etOrbitAddPlanetFragment"
+            app:layout_constraintTop_toBottomOf="@+id/etOrbitAddPlanetFragment" />
+
+        <Button
+            android:id="@+id/btnAddPlanetAddPlanetFragment"
+            android:layout_width="153dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="290dp"
+            android:text="Add Planet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPopulationAddPlanetFragment"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/btnBackAddPlanetFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

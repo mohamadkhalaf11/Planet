@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginSignUpForgetPassword.LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etEmailLoginFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="188dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Email..."
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/etPasswordLoginFragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/etPasswordLoginFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="Password..."
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvForgetPasswordLoginFragment"
+            app:layout_constraintStart_toStartOf="@+id/etEmailLoginFragment"
+            app:layout_constraintTop_toBottomOf="@+id/etEmailLoginFragment"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnLoginLoginFragment"
+            android:layout_width="164dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="37dp"
+            android:text="Log in"
+            app:layout_constraintBottom_toTopOf="@+id/tvSignUpLoginFragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvForgetPasswordLoginFragment"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tvForgetPasswordLoginFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="23dp"
+            android:text="Forget Password?"
+            app:layout_constraintBottom_toTopOf="@+id/btnLoginLoginFragment"
+            app:layout_constraintEnd_toEndOf="@+id/btnLoginLoginFragment"
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordLoginFragment"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvSignUpLoginFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="274dp"
+            android:text="don`t have an account? Sign Up"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLoginLoginFragment"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/btnAddPlanetLoginFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/baseline_add_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
